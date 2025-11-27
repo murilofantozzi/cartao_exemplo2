@@ -1,298 +1,355 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome para os ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Cartão - Solução de Pagamentos</title>
-    <style>
-    </style>
-</head>
+    <style></style>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <div class="header-container">
-            <div class="logo">Cartão</div>
-            <nav>
-                <a href="#beneficios">Soluções</a>
-                <a href="#simulator">Simule</a>
-                <a href="#sobre">Sobre</a>
-            </nav>
-            <div class="header-buttons">
-                <!-- <button class="btn-login">Entrar</button> -->
-                <button class="btn-primary" onclick="scrollToSimulador()">Simule agora</button>
-            </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="header-container">
+        <div class="logo">Cartão</div>
+        <nav>
+          <a href="#beneficios">Soluções</a>
+          <a href="#simulator">Simule</a>
+          <a href="#sobre">Sobre</a>
+        </nav>
+        <div class="header-buttons">
+          <!-- <button class="btn-login">Entrar</button> -->
+          <button class="btn-primary" onclick="scrollToSimulador()">
+            Simule agora
+          </button>
         </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="#beneficios">Soluções</a>
-            <a href="#simulador">Simule</a>
-            <a href="#sobre">Sobre</a>
-            <button class="btn-primary" onclick="scrollToSimulador()">Simule agora</button>
-        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#beneficios">Soluções</a>
+        <a href="#simulador">Simule</a>
+        <a href="#sobre">Sobre</a>
+        <button class="btn-primary" onclick="scrollToSimulador()">
+          Simule agora
+        </button>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <span class="badge">✨ Solução completa de pagamentos</span>
-                <h1>Receba pagamentos com confiança</h1>
-                <p>Integre o melhor sistema de processamento de pagamentos do Brasil. Cartão, Pix, Boleto e muito mais
-                    em uma única plataforma.</p>
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="badge">✨ Solução completa de pagamentos</span>
+          <h1>Receba pagamentos com confiança</h1>
+          <p>
+            Integre o melhor sistema de processamento de pagamentos do Brasil.
+            Cartão, Pix, Boleto e muito mais em uma única plataforma.
+          </p>
 
-                <div class="hero-buttons">
-                    <!-- <button class="btn-hero btn-cta">Começar Grátis →</button> -->
-                    <button class="btn-hero btn-secondary" onclick="scrollToSimulador()">Simule agora</button>
-                </div>
+          <div class="hero-buttons">
+            <!-- <button class="btn-hero btn-cta">Começar Grátis →</button> -->
+            <button
+              class="btn-hero btn-secondary"
+              onclick="scrollToSimulador()"
+            >
+              Simule agora
+            </button>
+          </div>
 
-                <div class="hero-checks">
-                    <div class="hero-check-item">
-                        <span class="checkmark">✓</span>
-                        <span>Sem burocracia</span>
-                    </div>
-                    <div class="hero-check-item">
-                        <span class="checkmark">✓</span>
-                        <span>Seguro</span>
-                    </div>
-                </div>
+          <div class="hero-checks">
+            <div class="hero-check-item">
+              <span class="checkmark">✓</span>
+              <span>Sem burocracia</span>
             </div>
+            <div class="hero-check-item">
+              <span class="checkmark">✓</span>
+              <span>Seguro</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Benefits Section -->
     <section class="benefits" id="beneficios">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Por que escolher Cartão?</h2>
-                <p>Tudo que você precisa para monetizar sua plataforma</p>
-            </div>
-
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3>Aprovação Rápida</h3>
-                    <p>Comece a receber em minutos, não em dias</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔒</div>
-                    <h3>Segurança Total</h3>
-                    <p>Criptografia de ponta a ponta em todas as transações</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
-                    <h3>Menores Taxas</h3>
-                    <p>Tarifas competitivas a partir de 1.99%</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📊</div>
-                    <h3>Dashboard Intuitivo</h3>
-                    <p>Acompanhe suas transações em tempo real</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔗</div>
-                    <h3>APIs Simples</h3>
-                    <p>Documentação completa e SDKs para todas as linguagens</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🌍</div>
-                    <h3>Cobertura Nacional</h3>
-                    <p>Aceite pagamentos de qualquer lugar do Brasil</p>
-                </div>
-            </div>
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Por que escolher Cartão?</h2>
+          <p>Tudo que você precisa para monetizar sua plataforma</p>
         </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Aprovação Rápida</h3>
+            <p>Comece a receber em minutos, não em dias</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🔒</div>
+            <h3>Segurança Total</h3>
+            <p>Criptografia de ponta a ponta em todas as transações</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💰</div>
+            <h3>Menores Taxas</h3>
+            <p>Tarifas competitivas a partir de 1.99%</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">📊</div>
+            <h3>Dashboard Intuitivo</h3>
+            <p>Acompanhe suas transações em tempo real</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🔗</div>
+            <h3>APIs Simples</h3>
+            <p>Documentação completa e SDKs para todas as linguagens</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🌍</div>
+            <h3>Cobertura Nacional</h3>
+            <p>Aceite pagamentos de qualquer lugar do Brasil</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Pricing Section -->
     <section class="simulator" id="simulator">
-        <div class="simulator-container">
-            <div class="simulator-card">
-                <header class="simulator-header" >
-                    <h1 class="title">Simulador de Parcelas</h1>
-                    <p class="subtitle">Ajuste o valor e quantidade de parcelas</p>
-                </header>
+      <div class="simulator-container">
+        <div class="simulator-card">
+          <header class="simulator-header">
+            <h1 class="title">Simulador de Parcelas</h1>
+            <p class="subtitle">Ajuste o valor e quantidade de parcelas</p>
+          </header>
 
-                <section class="input-section">
-                    <div class="input-header">
-                        <i class="fas fa-dollar-sign icon"></i>
-                        <span class="label">Valor Total</span>
-                        <span class="current-value" id="total-value-display">R$ 15.000,00</span>
-                    </div>
-                    <input type="range" id="total-value-range" min="1000" max="50000" step="100" value="15000">
-                    <div class="range-limits">
-                        <span>R$ 1.000,00</span>
-                        <span>R$ 50.000,00</span>
-                    </div>
-                </section>
+          <section class="input-section">
+            <div class="input-header">
+              <i class="fas fa-dollar-sign icon"></i>
+              <span class="label">Valor Total</span>
+              <span class="current-value" id="total-value-display"
+                >R$ 15.000,00</span
+              >
+            </div>
+            <input
+              type="range"
+              id="total-value-range"
+              min="1000"
+              max="50000"
+              step="100"
+              value="15000"
+            />
+            <div class="range-limits">
+              <span>R$ 1.000,00</span>
+              <span>R$ 50.000,00</span>
+            </div>
+          </section>
 
-                <section class="input-section">
-                    <div class="input-header">
-                        <i class="far fa-credit-card icon"></i>
-                        <span class="label">Número de Parcelas</span>
-                        <span class="current-value" id="installments-display">6x</span>
-                    </div>
-                    <input type="range" id="installments-range" min="1" max="12" step="1" value="6">
-                    <div class="range-limits">
-                        <span>1x</span>
-                        <span>12x</span>
-                    </div>
-                </section>
+          <input
+            type="range"
+            id="installments-range"
+            min="1"
+            max="12"
+            value="6"
+            oninput="updateSimulator()"
+          />
+          <span id="installments-display">6x</span>
 
-                <section class="result-section">
-                    <div class="result-box">
-                        <p class="result-label">VALOR DE CADA PARCELA</p>
-                        <p class="installment-value" id="installment-value">R$ 2.500,00</p>
-                        <p class="installment-details" id="installment-details">6x de R$ 2.500,00</p>
-                    </div>
-                </section>
-                <button class="btn-primary">Enviar</button>
+          <section class="result-section">
+            <div class="result-box">
+              <p class="result-label">VALOR DE CADA PARCELA</p>
+              <p class="installment-value" id="installment-value">R$ 0,00</p>
+              <p class="installment-details" id="installment-details">
+                0x de R$ 0,00
+              </p>
+            </div>
+          </section>
+          <button class="btn-primary">Enviar</button>
 
-                <!-- <footer class="simulator-footer">
+          <!-- <footer class="simulator-footer">
                 <div class="footer-item">
                     <span class="footer-label">Valor Total</span>
                     <span class="footer-value" id="footer-total-value">R$ 15.000,00</span>
                 </div>
                  -->
-                <!-- <div class="footer-item">
+          <!-- <div class="footer-item">
                     <span class="footer-label">Sem Juros</span>
                     <span class="footer-value">0%</span>
                 </div> -->
-                <!-- </footer> -->
-
-            </div>
+          <!-- </footer> -->
         </div>
-
+      </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials" id="sobre">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Confira na Prática</h2>
-                <p>Veja o que nossos clientes dizem</p>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Aumentamos nossas vendas em 45% após integrar a Cartão. A facilidade de
-                        uso é incrível."</p>
-                    <div class="testimonial-author">Carlos Silva</div>
-                    <div class="testimonial-company">E-commerce XYZ</div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Suporte excelente e documentação clara. Conseguimos integrar em menos
-                        de 2 horas."</p>
-                    <div class="testimonial-author">Marina Costa</div>
-                    <div class="testimonial-company">SaaS Tech</div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Melhor custo-benefício do mercado. Recomendo para qualquer negócio
-                        online."
-                    </p>
-                    <div class="testimonial-author">João Santos</div>
-                    <div class="testimonial-company">Marketplace</div>
-                </div>
-            </div>
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Confira na Prática</h2>
+          <p>Veja o que nossos clientes dizem</p>
         </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Aumentamos nossas vendas em 45% após integrar a Cartão. A
+              facilidade de uso é incrível."
+            </p>
+            <div class="testimonial-author">Carlos Silva</div>
+            <div class="testimonial-company">E-commerce XYZ</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Suporte excelente e documentação clara. Conseguimos integrar em
+              menos de 2 horas."
+            </p>
+            <div class="testimonial-author">Marina Costa</div>
+            <div class="testimonial-company">SaaS Tech</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Melhor custo-benefício do mercado. Recomendo para qualquer
+              negócio online."
+            </p>
+            <div class="testimonial-author">João Santos</div>
+            <div class="testimonial-company">Marketplace</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="form">
+      <div class="form-container">
+        <div class="form-card">
+          <header class="form-section-header">
+            <h1 class="title">Fale Conosco</h1>
+            <p class="subtitle">Preencha o formulário para entrar em contato</p>
+          </header>
 
-        <div class="form-container">
-            <div class="form-card">
-                <header class="form-section-header">
-                    <h1 class="title">Fale Conosco</h1>
-                    <p class="subtitle">Preencha o formulário para entrar em contato</p>
-                </header>
-
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="nome">Nome Completo</label>
-                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem (Opcional)</label>
-                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem..."></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-button">Enviar Mensagem</button>
-                </form>
-
-                <div id="form-message" class="form-message" style="display: none;"></div>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nome">Nome Completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="Seu nome completo"
+              />
             </div>
-        </div>
 
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="seu.email@exemplo.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(XX) XXXXX-XXXX"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem (Opcional)</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                placeholder="Sua mensagem..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Enviar Mensagem</button>
+          </form>
+
+          <div
+            id="form-message"
+            class="form-message"
+            style="display: none"
+          ></div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <div style="font-size: 1.5rem; font-weight: bold; color: white; margin-bottom: 1rem;">Cartão</div>
-                    <p>A solução de pagamentos mais confiável do Brasil.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Produto</h4>
-                    <ul>
-                        <li><a href="#simulator">Simule</a></li>
-                        <li><a href="#">Segurança</a></li>
-                        <li><a href="#">API Docs</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacidade</a></li>
-                        <li><a href="#">Termos</a></li>
-                        <li><a href="#">Compliance</a></li>
-                    </ul>
-                </div>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <div
+              style="
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 1rem;
+              "
+            >
+              Cartão
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Cartão. Todos os direitos reservados.</p>
-                <div class="social-links">
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">GitHub</a>
-                </div>
-            </div>
+            <p>A solução de pagamentos mais confiável do Brasil.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Produto</h4>
+            <ul>
+              <li><a href="#simulator">Simule</a></li>
+              <li><a href="#">Segurança</a></li>
+              <li><a href="#">API Docs</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacidade</a></li>
+              <li><a href="#">Termos</a></li>
+              <li><a href="#">Compliance</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Cartão. Todos os direitos reservados.</p>
+          <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
     </footer>
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
